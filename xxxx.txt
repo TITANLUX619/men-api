@@ -1,0 +1,9 @@
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports: 
+      - "8080:8080"
+    volumes: 
+      - "/home/antlopsou/Dropbox/etsii/Asignaturas/TFG/CÓDIGO/volumes/docker.sock:/var/run/docker.sock"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
