@@ -6,6 +6,10 @@ const objectController = require('../controllers/objectController');
 const router = express.Router();
 
 
+router.get('/check',  (req, res) => {
+      return res.status(200).send({ message: `Funciona!` });
+    });
+
 router.get('/object', objectController.getObjects);
 
 router.get('/object/:objectId', objectController.getObject);
