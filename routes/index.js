@@ -16,8 +16,6 @@ router.get('/object/:objectId', objectController.getObject);
 
 router.post('/object', objectController.saveObject);
 
-router.post('/object', objectController.saveObject);
-
 router.post('/object/:param', objectController.saveObject405);
 
 router.put('/object/:objectId', objectController.updateObject);
